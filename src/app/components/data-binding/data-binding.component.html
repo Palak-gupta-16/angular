@@ -1,0 +1,16 @@
+<p>data-binding works!</p>
+<!-- interpolation -->
+<h1>{{courseName}}</h1>
+<div>{{inputType}}</div>
+<input type="text" value="{{courseName}}" placeholder="enter text">
+<input type="{{inputType}}">
+
+<!-- property binding -->
+<div [class]="myClassName">hellllooooo</div>
+
+<input [type]="inputType" name="" id="">
+
+<button class="btn btn-success" (click)="showAlert('welcome...')">welcome</button>
+<button class="btn btn-danger" (click)="changeCourseName()">changed</button>
+
+<input type="text" [(ngModel)]="courseName"> - {{courseName}}
